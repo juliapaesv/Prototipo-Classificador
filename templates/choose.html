@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escolha a Classificação</title>
+</head>
+<body>
+    <h1>O modelo não conseguiu classificar com certeza. Escolha uma opção:</h1>
+    <form action="/finalize" method="post">
+        <input type="hidden" name="user_text" value="{{ user_text }}">
+        {% for option in options %}
+            <button type="submit" name="classification" value="{{ option }}">{{ option }}</button>
+        {% endfor %}
+    </form>
+</body>
+</html>
