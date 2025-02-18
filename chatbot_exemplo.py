@@ -3,8 +3,8 @@ import random
 
 app = Flask(__name__)
 
-# Entrada: texto inserido pelo usuário
-# Saída: classificação (string) ou opções (lista de strings)
+# entrada: texto inserido pelo usuário
+# saída: classificação (string) ou opções (lista de strings)
 def classify_text(text):
     if "bom" in text.lower():
         return "Positivo", None
