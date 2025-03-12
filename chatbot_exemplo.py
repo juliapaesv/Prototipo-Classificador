@@ -12,7 +12,7 @@ LABELS = ['Instalação e Implantação do Prontuário Eletrônico do e-SUS APS'
 MODEL_PATH = "app/model.pkl"
 VECTORIZER_PATH = "app/vectorizer.pkl"
 
-# Verifica se há um modelo treinado salvo
+# se há um modelo treinado salvo
 if os.path.exists(MODEL_PATH) and os.path.exists(VECTORIZER_PATH):
     with open(MODEL_PATH, 'rb') as model_file, open(VECTORIZER_PATH, 'rb') as vectorizer_file:
         clf = pickle.load(model_file)
