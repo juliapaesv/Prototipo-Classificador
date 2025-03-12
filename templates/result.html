@@ -2,10 +2,46 @@
 <html>
 <head>
     <title>Resultado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        a {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Resultado da Classificação</h1>
-    <p>O texto foi classificado como: <strong>{{ classification }}</strong></p>
-    <a href="/">Classificar outro texto</a>
+    <div class="container">
+        <h1>Resultado da Classificação</h1>
+        <p>Seu problema será melhor resolvido consultando a sessão referente a <strong>{{ classification }}</strong>.</p>
+        <a href="/">Classificar outro texto</a>
+    </div>
 </body>
 </html>
